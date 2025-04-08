@@ -1,0 +1,30 @@
+{
+  "name": "mediasoup-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "watch": "watchify public/index.js -o public/bundle.js -v -t [ babelify --presets [ @babel/preset-env ] ]"
+  },
+  "type": "module",
+  "author": "Michael Yirdaw",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "httpolyglot": "^0.1.2",
+    "mediasoup": "^3.15.7",
+    "mediasoup-client": "^3.9.5",
+    "nodemon": "^3.1.9",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "watchify": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "babelify": "^10.0.0"
+  }
+}
