@@ -7,12 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
     "dev": "nodemon app.js",
+    "babe": "nodemon app.js",
     "watch": "watchify public/index.js -o public/bundle.js -v -t [ babelify --presets [ @babel/preset-env ] ]"
   },
   "type": "module",
   "author": "Michael Yirdaw",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "eureka-js-client": "^4.5.0",
     "express": "^5.1.0",
     "httpolyglot": "^0.1.2",
     "mediasoup": "^3.15.7",
